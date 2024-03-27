@@ -2,10 +2,7 @@ package telran.perfomance.strings;
 
 import java.util.Random;
 
-import telran.perfomance.PerfomanceTest;
 import telran.perfomance.remove.SymbolsRemovePerformanceTest;
-import telran.strings.StringsJoin;
-import telran.strings.StringsJoinBuilder;
 import telran.strings.SymbolsRemove;
 import telran.strings.SymbolsRemoveCharArray;
 import telran.strings.SymbolsRemoveStandard;
