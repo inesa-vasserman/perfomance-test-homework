@@ -15,18 +15,12 @@ public class SymbolsRemoveCharArray implements SymbolsRemove{
 		char[] charArrayRes = new char[charArray.length];
 		for (char ch : charArray) {
 			if (ch != symbol) {
-				addSymbol(charArrayRes, ch, counter);
-				counter ++;
+				charArrayRes[counter++] += ch;
 			}
 		}
-		return new String(Arrays.copyOf(charArrayRes, counter));
+		return new String(charArrayRes, 0, counter);
 	}
 	
-	private void addSymbol(char[] charArrayRes, char ch, int counter) {
-		
-		charArrayRes[counter] += ch;
-		
-	}
 	
 	
 

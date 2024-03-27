@@ -7,6 +7,7 @@ public class SymbolsRemovePerformanceTest extends PerfomanceTest {
 	
 	SymbolsRemove symbolRemove;
 	String str;
+	char symbol;
 
 	public SymbolsRemovePerformanceTest(String displayNname, int nRuns, SymbolsRemove symbolRemove, String str) {
 		super(displayNname, nRuns);
@@ -17,7 +18,7 @@ public class SymbolsRemovePerformanceTest extends PerfomanceTest {
 
 	@Override
 	protected void runTest() {
-		symbolRemove.removeSymbol(str, ' ');
+		symbolRemove.removeSymbol(str, symbol);
 	}
 
 }
